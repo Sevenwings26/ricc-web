@@ -23,6 +23,7 @@ module.exports = {
 
       colors: {
         accent: "#FF9500",
+        faded: "#FF95004D",
       },
 
       keyframes: {
@@ -40,6 +41,10 @@ module.exports = {
       animation: {
         slideshow: "slideshow 10s linear infinite",
         // fade: "fader s linear infinite",
+      },
+      backgroundImage: {
+        hands: "url('../src/Assets/Images/fathertochild.png')",
+        gather: "url('../src/Assets/Images/gather.png')",
       },
     },
   },

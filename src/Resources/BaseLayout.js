@@ -2,38 +2,13 @@ import React, { useEffect, useState } from "react";
 import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import Banner from "../Assets/Images/banner.png";
+import Footer from "./Footer";
+import { NavData } from "../Components/NavData";
 
 const BaseLayout = () => {
   const location = useLocation();
   const [text1, setText1] = useState("");
   const [text2, setText2] = useState("");
-
-  const NavData = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "About RICC",
-      path: "/",
-    },
-    {
-      name: "Our Mission",
-      path: "/",
-    },
-    {
-      name: "Membership",
-      path: "/",
-    },
-    {
-      name: "Programs",
-      path: "/",
-    },
-    {
-      name: "More",
-      path: "/",
-    },
-  ];
 
   useEffect(() => {
     if (location.pathname === "/") {
@@ -53,9 +28,9 @@ const BaseLayout = () => {
           <img src={Logo} className="" />
         </div>
 
-        <ul className=" flex w-[70%] items-center justify-between">
+        <ul className=" flex w-[70%] items-center justify-between gap-10">
           {NavData.map((item, index) => (
-            <li key={index} className="mx-10">
+            <li key={index} className="">
               <Link to={item.path} className="">
                 {item.name}
               </Link>
@@ -88,8 +63,9 @@ const BaseLayout = () => {
             </div>
           </div>
         </div>
-        <div className="px-[150px]">
+        <div className="">
           <Outlet />
+          <Footer />
         </div>
       </div>
     </div>

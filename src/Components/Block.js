@@ -25,7 +25,7 @@ const Block = ({ image, text }) => {
     },
   ];
   return (
-    <div className="flex gap-10 justify-center flex-wrap">
+    <div className="flex gap-10 justify-center flex-wrap w-full">
       {BlockData?.map((item, index) => (
         <div className="flex flex-col rounded-lg overflow-hidden" key={index}>
           <div className="w-[350px] h-[200px]">
