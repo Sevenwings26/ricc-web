@@ -22,7 +22,7 @@ const MinistryComponent = () => {
     },
   ];
   return (
-    <div className="flex  py-5">
+    <div className="flex py-5 mobile:flex-col">
       <div>
         <p className="text-3xl font-semibold w-[50%]">
           There’s A Place For Everyone
@@ -45,7 +45,7 @@ const MinistryComponent = () => {
                 className="h-full w-full object-cover"
               />
             </div>
-            <p className="text-center my-5">{item.title}</p>
+            <p className="text-center my-5 mobile:text-[12px]">{item.title}</p>
           </div>
         ))}
       </div>

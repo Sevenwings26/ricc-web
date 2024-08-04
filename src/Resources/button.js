@@ -10,7 +10,6 @@ const Button = ({ outline, handleClick, btnName }) => {
           ? "border-2 border-accent text-accent bg-transparent text-bold px-10 py-2 rounded-lg"
           : "bg-white text-accent text-bold px-10 py-2 rounded-lg"
       }
-      onClick={handleClick}
     >
       {btnName}
     </button>

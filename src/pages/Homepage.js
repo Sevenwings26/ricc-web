@@ -16,7 +16,7 @@ const Homepage = () => {
         About Recharge International Christian Centre
       </p>
 
-      <div className="px-[150px]">
+      <div className="px-[150px] mobile:p-10">
         <p className="text-center text-3xl">
           Recharge International Christian Center is committed to
         </p>
@@ -25,17 +25,17 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="my-[100px] px-[150px]">
+      <div className="my-[100px] px-[150px] mobile:p-10 mobile:my-10">
         <p className="text-accent my-10 text-center">Core Values </p>
         <p className="text-center my-10 text-3xl">RICC Core Values</p>
         <Values />
       </div>
 
-      <div className=" h-[600px] px-[150px]">
+      <div className=" h-[600px] px-[150px] mobile:p-10">
         <Mission />
       </div>
 
-      <div className="my-10  px-[150px]">
+      <div className="my-10  px-[150px] mobile:p-10">
         <Boxcomponent
           headStyle="text-center"
           bodyStyle="items-center gap-10"
@@ -49,14 +49,14 @@ const Homepage = () => {
         />
       </div>
 
-      <div className="my-20 bg-black px-[150px] py-10">
+      <div className="my-20 bg-black px-[150px] mobile:p-10 py-10 mobile:my-10">
         <Boxcomponent
-          headStyle="leading-10"
-          bodyStyle="flex-row-reverse gap-10 justify-"
-          imageSize="w-[40%] h-[50%]"
+          headStyle="leading-10 mobile:text-center"
+          bodyStyle="flex-row-reverse gap-10  "
+          imageSize="w-[40%] h-[50%]  mobile:w-full"
           title="Membership And Governance"
           textBody="The organization shall be governed by a Board of Directors, consisting of a President/Founder, Vice President, Secretary, Treasurer, and members of an executive committee that would relate in direct line with different groups in the membership"
-          textStyle="text-white w-[100%]"
+          textStyle="text-white w-[50%] mobile:w-[100%] mobile:text-center"
           bodyImage={preacher}
         >
           <div className="my-5 flex items-center justify-center">
@@ -65,12 +65,12 @@ const Homepage = () => {
         </Boxcomponent>
       </div>
 
-      <div className="px-[150px]">
+      <div className="px-[150px] mobile:p-10">
         <p className="text-center my-10 text-accent">Ministries</p>
         <MinistryComponent />
       </div>
 
-      <div className="p-[100px]">
+      <div className="p-[100px] mobile:p-10">
         <p className="text-center font-semibold leading-10">
           Activities And Programs
         </p>

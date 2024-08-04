@@ -1,5 +1,3 @@
-import React from "react";
-
 export const NavData = [
   {
     name: "Home",
@@ -7,22 +5,22 @@ export const NavData = [
   },
   {
     name: "About RICC",
-    path: "/",
+    path: "/about",
   },
   {
     name: "Our Mission",
-    path: "/",
+    path: "/mission",
   },
   {
     name: "Membership",
-    path: "/",
+    path: "/membership",
   },
   {
     name: "Programs",
-    path: "/",
+    path: "/programs",
   },
   {
     name: "More",
-    path: "/",
+    path: "/ministries",
   },
 ];

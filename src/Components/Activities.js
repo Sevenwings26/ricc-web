@@ -28,14 +28,18 @@ const Activities = () => {
     },
   ];
   return (
-    <div className="flex  overflow-hidden">
-      <div className="w-full flex pr- animate-slideshow">
+    <div className="flex justify-between overflow-hidden ">
+      <div className="w-[100vh]] flex pr- animate-slideshow ">
         {Activities.map((activity, index) => (
-          <div key={index} className="w-[700PX] pr-5">
-            <div className="h-[300px] rounded-lg overflow-hidden">
+          <div
+            key={index}
+            className="w-[500px]  whitespace-nowrap  mobile:h-[400px] pr-5"
+          >
+            <div className="h-[300px] rounded-lg overflow-hidden mobile:h-[200px]">
               <img
                 src={activity.image}
                 className="h-full w-full object-cover"
+                alt="..."
               />
             </div>
 
@@ -45,18 +49,22 @@ const Activities = () => {
                 <IoArrowForward />
               </p>
 
-              <p className="text-[14px]">{activity.text}</p>
+              <p className="text-[14px] text-wrap">{activity.text}</p>
             </div>
           </div>
         ))}
       </div>
-      <div className="flex w-full  animate-slideshow">
+      <div className="w-[100vh]] flex pr- animate-slideshow ">
         {Activities.map((activity, index) => (
-          <div key={index} className="w-[700px] pr-5">
-            <div className="h-[300px] rounded-lg overflow-hidden">
+          <div
+            key={index}
+            className="w-[500px]  whitespace-nowrap  mobile:h-[400px] pr-5"
+          >
+            <div className="h-[300px] rounded-lg overflow-hidden mobile:h-[200px]">
               <img
                 src={activity.image}
                 className="h-full w-full object-cover"
+                alt="..."
               />
             </div>
 
@@ -66,7 +74,7 @@ const Activities = () => {
                 <IoArrowForward />
               </p>
 
-              <p>{activity.text}</p>
+              <p className="text-[14px] text-wrap">{activity.text}</p>
             </div>
           </div>
         ))}

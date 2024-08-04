@@ -8,12 +8,19 @@ import {
 import BaseLayout from "./Resources/BaseLayout";
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
-
+import MissionPage from "./pages/MissionPage";
+import Membership from "./pages/Membership";
+import Program from "./pages/Program";
+import Ministries from "./pages/Ministries";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<BaseLayout />}>
       <Route path="/" element={<Homepage />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/about" element={<About />} />\
+      <Route path="/mission" element={<MissionPage />} />
+      <Route path="/membership" element={<Membership />} />
+      <Route path="/programs" element={<Program />} />
+      <Route path="/ministries" element={<Ministries />} />
     </Route>
   )
 );

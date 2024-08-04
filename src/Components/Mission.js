@@ -5,9 +5,6 @@ import pray from "../Assets/Images/pray.png";
 
 const Mission = () => {
   const [positionState, setPositionState] = useState("1");
-  const [image1, setImage1] = useState(children);
-  const [image2, setImage2] = useState(worship);
-  const [image3, setImage3] = useState(pray);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,7 +18,7 @@ const Mission = () => {
     }, [3000]);
   }, [positionState]);
   return (
-    <div className="">
+    <div className=" relative h-full">
       <div>
         <p className="text-accent text-center">Mission</p>
         <p className="text-center my-10">
@@ -33,7 +30,7 @@ const Mission = () => {
         </p>
       </div>
 
-      <div className="relative flex justify-between">
+      <div className="relative flex justify-between mobile:flex-col  h-[250px]">
         <img
           src={
             positionState === "1"
@@ -43,7 +40,7 @@ const Mission = () => {
               : pray
           }
           alt="child"
-          className=" h-[250px] "
+          className=" h-[250px]  mobile:h-full mobile:absolute top-0"
         />
         <img
           src={
@@ -54,7 +51,7 @@ const Mission = () => {
               : children
           }
           alt="child"
-          className=" absolute top-[50%] left-[50%] translate-x-[-50%] h-[250px] animate-fade"
+          className=" absolute  top-[50%] left-[50%] translate-x-[-50%] h-[250px] animate-fade mobile:h-full mobile:absolute mobile:top-10 mobile:left-0 mobile:translate-x-[0]"
         />
         <img
           src={
@@ -65,7 +62,7 @@ const Mission = () => {
               : worship
           }
           alt="child"
-          className=" h-[250px] "
+          className=" h-[250px] mobile:h-full mobile:absolute mobile:top-20 "
         />
       </div>
     </div>

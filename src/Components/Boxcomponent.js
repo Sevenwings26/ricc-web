@@ -9,10 +9,12 @@ const Boxcomponent = ({
   headStyle,
   children,
   imageSize,
+  textBox,
+  index,
 }) => {
   return (
-    <div className={`flex ${bodyStyle}`}>
-      <div className="w-[50%] my-5">
+    <div className={`flex ${bodyStyle} mobile:flex-col  `} key={index}>
+      <div className={`${textBox}  my-5`}>
         <p className={`text-accent text-2xl leading-10 ${headStyle}`}>
           {title}
         </p>

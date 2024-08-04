@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
-import { Link, Outlet, useLocation } from "react-router-dom";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 import Banner from "../Assets/Images/banner.png";
 import Footer from "./Footer";
 import { NavData } from "../Components/NavData";
@@ -8,32 +8,38 @@ import { NavData } from "../Components/NavData";
 const BaseLayout = () => {
   const location = useLocation();
   const [text1, setText1] = useState("");
-  const [text2, setText2] = useState("");
 
   useEffect(() => {
     if (location.pathname === "/") {
       setText1("Welcome To ");
-      setText2("Recharge International Christian Centre");
     } else if (location.pathname === "/about") {
-      setText1("oh well ");
-      setText2("Recharge International Christian Centre");
+      setText1("Our Statement of Faith At ");
+    } else if (location.pathname === "/mission") {
+      setText1("Our Mission And Vision At");
+    } else if (location.pathname === "/membership") {
+      setText1("Membership And Governance At");
+    } else if (location.pathname === "/programs") {
+      setText1("Programs And Activities");
+    } else if (location.pathname === "/ministries") {
+      setText1("Ministries");
     }
+
+    //
   }, [location]);
 
-  console.log(location.pathname, text1, text2);
   return (
     <div className="">
-      <div className="flex justify-between py-10 px-10 bg-white">
+      <div className="flex justify-between py-10 px-10 bg-white mobile:py-5 mobile:px-5">
         <div className="w-[30%]">
           <img src={Logo} className="" />
         </div>
 
-        <ul className=" flex w-[70%] items-center justify-between gap-10">
+        <ul className="w-[50%] flex items-center justify-between gap-10 mobile:hidden">
           {NavData.map((item, index) => (
             <li key={index} className="">
-              <Link to={item.path} className="">
+              <NavLink to={item.path} className=" actives">
                 {item.name}
-              </Link>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -49,10 +55,12 @@ const BaseLayout = () => {
               className="object-cover h-full w-full"
             />
             <div className=" flex flex-col items-center absolute z-50 top-[50%] left-[50%]  w-full text-center translate-x-[-50%] translate-y-[-50%]">
-              <p className="text-big-3xl font-semibold text-white leading-10">
+              <p className="text-big-3xl font-semibold text-white leading-10 mobile:text-small-xl">
                 {text1}
               </p>
-              <p className="text-big-3xl font-semibold text-accent">{text2}</p>
+              <p className="text-big-3xl font-semibold text-accent mobile:text-small-xl">
+                Recharge International Christian Centre
+              </p>
               {location.pathname === "/" && (
                 <p className="text-white w-[70%]">
                   We are dedicated to raising Kingdom giants who are both kings

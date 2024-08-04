@@ -46,6 +46,14 @@ module.exports = {
         hands: "url('../src/Assets/Images/fathertochild.png')",
         gather: "url('../src/Assets/Images/gather.png')",
       },
+
+      screens: {
+        mobile: { max: "480px" },
+        smtab: { min: "481px", max: "768px" },
+        Tablet: { min: "768px", max: "1024px" },
+        desktop: { min: "1025px", max: "1440px" },
+        large: { min: "1441px" },
+      },
     },
   },
   plugins: [],
