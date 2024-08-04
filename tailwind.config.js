@@ -36,10 +36,16 @@ module.exports = {
           from: { opacity: "1" },
           to: { opacity: "0.5" },
         },
+
+        slidein: {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(0%)" },
+        },
       },
 
       animation: {
         slideshow: "slideshow 10s linear infinite",
+        slideIn: "slidein 1s ease-in-out",
         // fade: "fader s linear infinite",
       },
       backgroundImage: {

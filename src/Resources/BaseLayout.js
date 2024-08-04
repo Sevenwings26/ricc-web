@@ -4,10 +4,13 @@ import { NavLink, Outlet, useLocation } from "react-router-dom";
 import Banner from "../Assets/Images/banner.png";
 import Footer from "./Footer";
 import { NavData } from "../Components/NavData";
+import { IoMenu } from "react-icons/io5";
+import { IconContext } from "react-icons";
 
 const BaseLayout = () => {
   const location = useLocation();
   const [text1, setText1] = useState("");
+  const [nav, setNav] = useState(false);
 
   useEffect(() => {
     if (location.pathname === "/") {
@@ -27,17 +30,33 @@ const BaseLayout = () => {
     //
   }, [location]);
 
+  const handleNav = () => {
+    setNav(!nav);
+    console.log(nav);
+  };
+
   return (
     <div className="">
-      <div className="flex justify-between py-10 px-10 bg-white mobile:py-5 mobile:px-5">
+      <div className="flex justify-between items-center py-10 px-10 bg-white mobile:py-5 mobile:px-5 relative">
         <div className="w-[30%]">
           <img src={Logo} className="" />
         </div>
 
-        <ul className="w-[50%] flex items-center justify-between gap-10 mobile:hidden">
+        <div className="hidden mobile:block" onClick={handleNav}>
+          <IconContext.Provider value={{ size: "30px" }}>
+            <IoMenu />
+          </IconContext.Provider>
+        </div>
+        <ul
+          className={`w-[50%] flex items-center justify-between gap-10 bg-white ${
+            nav
+              ? "mobile:flex mobile:absolute mobile:top-[100%] mobile:w-full z-[10000000] mobile:h-[100dvh] mobile:left-0 mobile:flex-col mobile:justify-start mobile:py-20 animate-slideIn"
+              : "hidden"
+          }`}
+        >
           {NavData.map((item, index) => (
             <li key={index} className="">
-              <NavLink to={item.path} className=" actives">
+              <NavLink to={item.path} className=" actives mobile:text-3xl">
                 {item.name}
               </NavLink>
             </li>
