@@ -30,7 +30,10 @@ const Program = () => {
   return (
     <div className="px-[150px] mobile:px-10 py-[150px] mobile:py-[70px] flex flex-col gap-10 ">
       {Activities?.map((items, index) => (
-        <div key={index} className="flex items-center gap-10 mobile:gap-5">
+        <div
+          key={index}
+          className="flex items-center gap-10 mobile:gap-5 mobile:flex-col"
+        >
           <div className="w-full h-full ">
             <img
               src={items.image}

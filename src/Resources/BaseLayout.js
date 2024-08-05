@@ -56,7 +56,11 @@ const BaseLayout = () => {
         >
           {NavData.map((item, index) => (
             <li key={index} className="">
-              <NavLink to={item.path} className=" actives mobile:text-3xl">
+              <NavLink
+                to={item.path}
+                className=" actives mobile:text-3xl"
+                onClick={handleNav}
+              >
                 {item.name}
               </NavLink>
             </li>

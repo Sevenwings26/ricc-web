@@ -30,7 +30,9 @@ const Footer = () => {
     <div className=" bg-black bg-opacity-50 bg-gather  bg-cover bg-center bg-blend-overlay">
       <div className="relative top-[-100px] h-[250px] bg-hands bg-blend-overlay  bg-opacity-10 bg-accent bg-cover bg-center mx-[100px] flex items-center justify-center rounded-lg mobile:m-10">
         <div className="text-center">
-          <p className="my-[24px] text-small-xl font-semibold">Ways to Give</p>
+          <p className="my-[24px] text-small-xl font-semibold mobile:text-xl">
+            Ways to Give
+          </p>
           <p className="my-5">
             We give not out of compulsion or fear but a desire to see the gospel
             prosper in our day.

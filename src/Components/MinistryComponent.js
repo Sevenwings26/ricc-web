@@ -35,7 +35,7 @@ const MinistryComponent = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-6 mobile:flex-col">
         {ministry.map((item, index) => (
           <div key={index}>
             <div className="h-full w-full">
