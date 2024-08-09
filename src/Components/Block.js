@@ -28,7 +28,7 @@ const Block = ({ image, text }) => {
     <div className="flex gap-10 justify-center flex-wrap w-full">
       {BlockData?.map((item, index) => (
         <div className="flex flex-col rounded-lg overflow-hidden" key={index}>
-          <div className="w-[350px] h-[200px]">
+          <div className="w-[350px] h-[200px] smtab:w-full">
             <img
               src={item.image}
               className="w-full h-full object-cover"

@@ -16,7 +16,7 @@ const Homepage = () => {
         About Recharge International Christian Centre
       </p>
 
-      <div className="px-[150px] mobile:p-10">
+      <div className="px-[150px] mobile:p-10 smtab:p-10">
         <p className="text-center text-3xl">
           Recharge International Christian Center is committed to
         </p>
@@ -25,17 +25,17 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="my-[100px] px-[150px] mobile:p-10 mobile:my-10">
+      <div className="my-[100px] px-[150px] mobile:p-10 mobile:my-10 smtab:p-10 smtab:my-0">
         <p className="text-accent my-10 text-center">Core Values </p>
         <p className="text-center my-10 text-3xl">RICC Core Values</p>
         <Values />
       </div>
 
-      <div className=" h-[600px] px-[150px] mobile:p-10">
+      <div className=" h-[600px] px-[150px] mobile:p-10 smtab:p-10">
         <Mission />
       </div>
 
-      <div className="my-10  px-[150px] mobile:p-10">
+      <div className="my-10  px-[150px] mobile:p-10 smtab:p-10">
         <Boxcomponent
           headStyle="text-center"
           bodyStyle="items-center gap-10"

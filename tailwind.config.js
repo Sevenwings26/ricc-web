@@ -44,7 +44,7 @@ module.exports = {
       },
 
       animation: {
-        slideshow: "slideshow 10s linear infinite",
+        slideshow: "slideshow 20s linear infinite",
         slideIn: "slidein 1s ease-in-out",
         // fade: "fader s linear infinite",
       },

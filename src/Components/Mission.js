@@ -40,7 +40,7 @@ const Mission = () => {
               : pray
           }
           alt="child"
-          className=" h-[250px]  mobile:h-full mobile:absolute top-0"
+          className=" h-[250px]  mobile:h-full mobile:absolute top-0  smtab:h-full smtab:absolute smtab:top-0"
         />
         <img
           src={
@@ -51,7 +51,7 @@ const Mission = () => {
               : children
           }
           alt="child"
-          className=" absolute  top-[50%] left-[50%] translate-x-[-50%] h-[250px] animate-fade mobile:h-full mobile:absolute mobile:top-10 mobile:left-0 mobile:translate-x-[0]"
+          className=" absolute  top-[50%] left-[50%] translate-x-[-50%] h-[250px] animate-fade mobile:h-full mobile:absolute mobile:top-10 mobile:left-0 mobile:translate-x-[0] smtab:h-full smtab:absolute smtab:top-10 smtab:left-0 smtab:translate-x-[0]"
         />
         <img
           src={
@@ -62,7 +62,7 @@ const Mission = () => {
               : worship
           }
           alt="child"
-          className=" h-[250px] mobile:h-full mobile:absolute mobile:top-20 "
+          className=" h-[250px] mobile:h-full mobile:absolute mobile:top-30 smtab:h-full smtab:absolute smtab:top-[100px]"
         />
       </div>
     </div>

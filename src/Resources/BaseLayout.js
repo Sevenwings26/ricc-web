@@ -42,7 +42,7 @@ const BaseLayout = () => {
           <img src={Logo} className="" />
         </div>
 
-        <div className="hidden mobile:block" onClick={handleNav}>
+        <div className="hidden mobile:block smtab:block" onClick={handleNav}>
           <IconContext.Provider value={{ size: "30px" }}>
             <IoMenu />
           </IconContext.Provider>
@@ -51,7 +51,7 @@ const BaseLayout = () => {
           className={`w-[50%] flex items-center justify-between gap-10 bg-white ${
             nav
               ? "mobile:flex mobile:absolute mobile:top-[100%] mobile:w-full z-[10000000] mobile:h-[100dvh] mobile:left-0 mobile:flex-col mobile:justify-start mobile:py-20 animate-slideIn"
-              : "hidden"
+              : "mobile:hidden smtab:hidden"
           }`}
         >
           {NavData.map((item, index) => (
