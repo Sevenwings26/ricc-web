@@ -32,7 +32,10 @@ const BaseLayout = () => {
 
   const handleNav = () => {
     setNav(!nav);
-    console.log(nav);
+  };
+
+  const closed = () => {
+    setNav(false);
   };
 
   return (
@@ -59,7 +62,7 @@ const BaseLayout = () => {
               <NavLink
                 to={item.path}
                 className=" actives mobile:text-3xl"
-                onClick={handleNav}
+                onClick={closed}
               >
                 {item.name}
               </NavLink>

@@ -28,7 +28,7 @@ const MinistryComponent = () => {
           There’s A Place For Everyone
         </p>
         <p className="text-[14px]">
-          The organization shall include the following ministries:
+          The organization includes the following ministries:
         </p>
         <div className="my-5">
           <Button outline btnName="See All Ministries" handleClick />

@@ -48,16 +48,16 @@ const Ministries = () => {
         <p>The organization shall include the following ministries:</p>
       </div>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 ">
         {ministry?.map((item, index) => (
           <div key={index}>
             <Boxcomponent
-              index={index}
+              // index={index}
               title={item.title}
               textBody={item.text}
               bodyImage={item.picture}
               headStyle="text-center"
-              bodyStyle=" flex gap-10 odd:flex-row-reverse items-center mobile:odd:flex-col"
+              bodyStyle=" flex gap-10 items-center mobile:odd:flex-col"
               imageSize="w-full"
               textBox="w-[70%] mobile:w-full"
             />

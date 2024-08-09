@@ -53,13 +53,13 @@ const Homepage = () => {
         <Boxcomponent
           headStyle="leading-10 mobile:text-center"
           bodyStyle="flex-row-reverse gap-10  "
-          imageSize="w-[40%] h-[50%]  mobile:w-full"
+          imageSize="w-[100%] h-[100%] mobile:w-full"
           title="Membership And Governance"
           textBody="The organization shall be governed by a Board of Directors, consisting of a President/Founder, Vice President, Secretary, Treasurer, and members of an executive committee that would relate in direct line with different groups in the membership"
           textStyle="text-white w-[50%] mobile:w-[100%] mobile:text-center"
           bodyImage={preacher}
         >
-          <div className="my-5 flex items-center justify-center">
+          <div className="my-5 flex items-center mobile:justify-center">
             <Button btnName="Learn more" />
           </div>
         </Boxcomponent>

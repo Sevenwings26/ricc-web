@@ -7,8 +7,8 @@ const Membership = () => {
       <div className="mobile:text-center mb-10">
         <p className="text-accent text-center">Membership</p>
         <p>
-          The organization shall be governed by a Board of Directors, consisting
-          of a President/Founder, Vice President
+          The organization is governed by a Board of Directors, consisting of a
+          President/Founder, Vice President
         </p>
       </div>
 
@@ -23,7 +23,7 @@ const Membership = () => {
       <div className="mobile:text-center mb-10">
         <p className="text-accent text-center">Right And Responsibilities</p>
         <p>
-          Members shall have the right to participate in all activities of the
+          Members have the right to participate in all activities of the
           Ministry as pertains to them. They shall be responsible for upholding
           the organization's values and actively contributing to its mission.
         </p>
@@ -42,7 +42,7 @@ const Membership = () => {
       <div className="mobile:text-center mb-10">
         <p className="text-accent text-center">Leadership Structure</p>
         <p>
-          Members shall have the right to participate in all activities of the
+          Members have the right to participate in all activities of the
           Ministry as pertains to them. They shall be responsible for upholding
           the organization's values and actively contributing to its mission.
         </p>
@@ -50,9 +50,9 @@ const Membership = () => {
       <div className="mobile:text-center mb-10">
         <p className="text-accent text-center">Election and Terms</p>
         <p>
-          Officers shall be SELECTED by the President/Founder, Vice President,
-          and Secretary, based on spiritual and physical scrutiny, and serve for
-          a term of two years, with the possibility of re-selection. While
+          Officers are SELECTED by the President/Founder, Vice President, and
+          Secretary, based on spiritual and physical scrutiny, and serve for a
+          term of two years, with the possibility of re-selection. While
           executive committee members who serve as heads of various member
           groups will be elected by members.
         </p>
@@ -60,10 +60,10 @@ const Membership = () => {
       <div className="mobile:text-center mb-10">
         <p className="text-accent text-center">Meetings</p>
         <p>
-          The Board of Directors shall meet regularly to discuss and make
-          decisions regarding the organization's activities and direction.
-          General membership meetings shall be held occasionally as determined
-          by the Board of Directors.
+          The Board of Directors meet regularly to discuss and make decisions
+          regarding the organization's activities and direction. General
+          membership meetings shall be held occasionally as determined by the
+          Board of Directors.
         </p>
       </div>
     </div>

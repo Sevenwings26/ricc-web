@@ -1,27 +1,32 @@
 import React from "react";
 import banner from "../Assets/Images/banner.png";
+import manPray from "../Assets/Images/manPray.png";
+import womanpray from "../Assets/Images/womanpray.png";
+import worship from "../Assets/Images/womanworship.png";
+import biblestudy from "../Assets/Images/bibleStudy.png";
+import notalone from "../Assets/Images/notalone.png";
 
 const Block = ({ image, text }) => {
   const BlockData = [
     {
       title: "Prayer",
-      image: banner,
+      image: manPray,
     },
     {
       title: "Preaching",
-      image: banner,
+      image: womanpray,
     },
     {
       title: "Psalmist(Worship)",
-      image: banner,
+      image: worship,
     },
     {
       title: "Press/Propagators of the Gospel",
-      image: banner,
+      image: biblestudy,
     },
     {
       title: "Prophetic Ministry Expressions",
-      image: banner,
+      image: notalone,
     },
   ];
   return (
