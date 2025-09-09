@@ -4,7 +4,7 @@ export const NavData = [
     path: "/",
   },
   {
-    name: "About RICC",
+    name: "About",
     path: "/about",
   },
   {

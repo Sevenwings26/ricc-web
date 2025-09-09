@@ -1,16 +1,24 @@
 import React from "react";
-import Button from "./button";
-import Inputs from "./Inputs";
+// import Button from "./button";
+// import Inputs from "./Inputs";
 import { NavData } from "../Components/NavData";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
-import { IoLogoInstagram, IoLogoTwitter, IoMail } from "react-icons/io5";
+import { IoLogoInstagram, IoLogoTwitter, IoMail, IoLogoFacebook, IoLogoWhatsapp } from "react-icons/io5";
 import { IconContext } from "react-icons";
 
 const Footer = () => {
   const Social = [
     {
+      icon: <IoLogoWhatsapp />,
+      link: "/",
+    },
+    {
       icon: <IoLogoInstagram />,
+      link: "/",
+    },
+    {
+      icon: <IoLogoFacebook />,
       link: "/",
     },
     {
@@ -21,71 +29,97 @@ const Footer = () => {
       icon: <IoLogoTwitter />,
       link: "/",
     },
-    {
-      icon: <IoLogoInstagram />,
-      link: "/",
-    },
   ];
   return (
-    <div className=" bg-black bg-opacity-50 bg-gather  bg-cover bg-center bg-blend-overlay">
-      <div className="relative top-[-100px] h-[250px] bg-hands bg-blend-overlay  bg-opacity-10 bg-accent bg-cover bg-center mx-[100px] flex items-center justify-center rounded-lg mobile:m-10">
-        <div className="text-center">
-          <p className="my-[24px] text-small-xl font-semibold mobile:text-xl">
-            Ways to Give
-          </p>
-          <p className="my-5">
-            We give not out of compulsion or fear but a desire to see the gospel
-            prosper in our day.
-          </p>
+    <div>
 
-          <Button btnName="Give Here" />
-        </div>
-      </div>
+        <div className="bg-black text-white py-12 px-6 md:px-12">
+            <div className="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between space-y-8 md:space-y-0">
 
-      <div className="px-[100px] flex  flex-col items-center justify-center mobile:p-10">
-        <p className="text-center text-white mb-5 text-3xl">
-          Wants To Get Update From Us?
-        </p>
-
-        <div className="flex items-center gap-10 mobile:flex-col">
-          <Inputs />
-          <Button btnName="Submit" />
-        </div>
-      </div>
-
-      <div className="flex justify-between py-10 px-10 mobile:px-5 text-white border-y border-white my-10 mobile:flex-col">
-        <div className=" bg-white rounded-lg">
-          <img src={Logo} className="" alt="..." />
-        </div>
-
-        <ul className=" flex  gap-10 items-center justify-between mobile:gap-2 mobile:my-5">
-          {NavData.map((item, index) => (
-            <li key={index} className="text-[12px]">
-              <Link to={item.path} className="">
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        <div className="">
-          <p>Connect with us</p>
-          <IconContext.Provider value={{ size: "25px" }}>
-            <div className="flex item-center justify-between">
-              {Social.map((item, index) => (
-                <div key={index}>
-                  <Link to={item.link}>{item.icon}</Link>
-                </div>
-              ))}
+            {/* Text and Title Section */}
+            <div className="md:w-1/2">
+                <h3 className="text-2xl font-bold text-orange-500 mb-4">Ways to Give / Donate</h3>
+                <p className="text-gray-300 mb-2 max-w-lg">
+                We give not out of compulsion or fear, but out of a desire to see the gospel prosper in our day.
+                </p>
             </div>
-          </IconContext.Provider>
-        </div>
-      </div>
 
-      <p className="text-white text-center text-[14px] my-10 mb-2">
-        &copy;2024 Recharge International Christian Centre. rights reserved
-      </p>
+            {/* Donation Details Section */}
+            <div className="md:w-1/2 md:text-right">
+                <div className="flex flex-col space-y-4">
+                <p className="text-lg font-semibold text-white">
+                    Account Name: <span className="font-normal text-gray-300">Recharge Global Christian Network</span>
+                </p>
+                <div className="flex flex-col space-y-2">
+                    {/* Donation Accounts */}
+                    <div className="bg-white text-black p-2 rounded-lg shadow-inner">
+                    <p className="font-semibold text-lg">Naira Account</p>
+                    <p className="text-sm">1027684428</p>
+                    </div>
+                    <div className="bg-white text-black p-2 rounded-lg shadow-inner">
+                    <p className="font-semibold text-lg">USD Account</p>
+                    <p className="text-sm">3004627134</p>
+                    </div>
+                    <div className="bg-white text-black p-2 rounded-lg shadow-inner">
+                    <p className="font-semibold text-lg">Pounds Account</p>
+                    <p className="text-sm">3004627165</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+  {/* to get update? */}
+
+        <footer className="bg-white text-gray-700 py-4 px-6 border-t border-gray-200 md:px-10">
+            <div className="container mx-auto flex flex-col items-center space-y-8 md:flex-row md:justify-between md:space-y-0">
+
+                {/* Logo Section */}
+                <div className="w-full text-center inline-block md:w-auto md:text-left">
+                    <div className="inline-block rounded-lg">
+                        <img src={Logo} alt="Logo" className=""/>
+                    </div>
+                </div>
+
+                {/* Navigation Links */}
+                <ul className="flex flex-col items-center space-y-2 text-xl md:flex-row md:space-x-8 md:space-y-0 md:text-base">
+                {NavData.map((item, index) => (
+                    <li key={index}>
+                    <Link to={item.path} className="text-gray-700 hover:text-black transition-colors duration-200">
+                        {item.name}
+                    </Link>
+                    </li>
+                ))}
+                </ul>
+
+                {/* Social Media Links */}
+                <div className="w-full text-center md:w-auto md:text-left">
+                <p className="font-semibold text-gray-800 mb-2">Connect with us</p>
+                <IconContext.Provider value={{ size: "25px", color: "#4b5563" }}>
+                    <div className="flex items-center justify-center space-x-4 md:justify-start">
+                    {Social.map((item, index) => (
+                        <div key={index}>
+                        <Link to={item.link} className="text-gray-700 hover:text-orange-500 transition-colors duration-200">
+                            {item.icon}
+                        </Link>
+                        </div>
+                    ))}
+                    </div>
+                </IconContext.Provider>
+                </div>
+            </div>
+        </footer>
+        <div>
+            <p className=" bg-orange-500 text-gray-700 text-center lg:text-3xl md:text-2xl sm:text-xs py-2">
+                &copy;2025 Recharge International Christian Centre. Rights reserved
+            </p>
+        </div>
+
     </div>
+
+
+
   );
 };
 

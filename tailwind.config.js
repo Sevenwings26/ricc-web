@@ -1,4 +1,36 @@
-/** @type {import('tailwindcss').Config} */
+// // tailwind.config.js
+// /** @type {import('tailwindcss').Config} */
+// module.exports = {
+//   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+//   theme: {
+//     extend: {
+//       // Keep your custom font sizes and colors
+//       fontSize: {
+//         "1xl": ["1rem"],
+//         "2xl": ["1.125rem"],
+//         // ... and so on
+//       },
+//       colors: {
+//         accent: "#FF9500",
+//         faded: "#FF95004D",
+//       },
+//       // Keep your keyframes and animations
+//       keyframes: {
+//         // ...
+//       },
+//       animation: {
+//         // ...
+//       },
+//       backgroundImage: {
+//         // ...
+//       },
+//     },
+//   },
+//   plugins: [],
+// };
+
+
+// /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
