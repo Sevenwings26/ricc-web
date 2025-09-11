@@ -14,12 +14,12 @@ export default [
   {
     title: "Congregation",
     content: "",
-    backgroundImage: Banner2,
-    {
-      title: "Campus-meeting",
-      content: "",
-      backgroundImage: Banner5,
-    },
+    backgroundImage: Banner2
+  },
+  {
+    title: "Campus-meeting",
+    content: "",
+    backgroundImage: Banner5,
   },
   {
     title: "Congregation",
