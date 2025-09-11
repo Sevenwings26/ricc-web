@@ -1,16 +1,11 @@
 import React from "react";
 import Button from "../Resources/button";
-import couple from "../Assets/Images/couple.png";
-import campus from "../Assets/Images/campus.png";
-import prison from "../Assets/Images/prison.png";
+// import couple from "../Assets/Images/couple.png";
+import campus from "../Assets/Images/ministry/oau.jpg";
+import prison from "../Assets/Images/ministry/prison.jpg";
 
 const MinistryComponent = () => {
   const ministry = [
-    {
-      image: couple,
-      title: "Single/Married Ministry",
-    },
-
     {
       image: campus,
       title: "Campus Ministry",
@@ -70,14 +65,14 @@ const MinistryComponent = () => {
             key={index} 
             className="w-full max-w-xs md:w-1/2 lg:w-1/3 p-0 bg-white rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
           >
-            <div className="w-full h-56 rounded-lg overflow-hidden mb-4">
+            <div className="w-full h-56 rounded-lg overflow-hidden mb-2">
               <img
                 src={item.image}
                 alt={item.title || "ministry image"}
                 className="w-full h-full object-cover"
               />
             </div>
-            <p className="text-center font-bold text-lg text-black">{item.title}</p>
+            <p className="text-center font-bold text-lg text-black mb-2">{item.title}</p>
           </div>
         ))}
       </div>

@@ -1,12 +1,4 @@
 import React from "react";
-// import banner from "../Assets/Images/banner.png";
-// import manPray from "../Assets/Images/manPray.png";
-import womanpray from "../Assets/Images/womanpray.png";
-// import worship from "../Assets/Images/womanworship.png";
-import biblestudy from "../Assets/Images/bibleStudy.png";
-import notalone from "../Assets/Images/notalone.png";
-
-
 import prayer from "../Assets/Images/block/prayer.jpg"
 // import prayer1 from "../Assets/Images/block/prayer1.jpg"
 import PropheticEx from "../Assets/Images/block/propheticEx.jpg"
@@ -38,22 +30,6 @@ const Block = ({ image, text }) => {
     },
   ];
   return (
-    // <div className="flex gap-10 justify-center flex-wrap w-full">
-    //   {BlockData?.map((item, index) => (
-    //     <div className="flex flex-col rounded-lg overflow-hidden" key={index}>
-    //       <div className="w-[350px] h-[200px] smtab:w-full">
-    //         <img
-    //           src={item.image}
-    //           className="w-full h-full object-cover"
-    //           alt="blackimages"
-    //         />
-    //       </div>
-    //       <div className="text-center p-3 bg-accent ">
-    //         <p className="font-bold">{item.title}</p>
-    //       </div>
-    //     </div>
-    //   ))}
-    // </div>
     <div className="flex flex-col gap-6 w-full items-center md:flex-row md:flex-wrap md:justify-center">
       {BlockData?.map((item, index) => (
         <div 

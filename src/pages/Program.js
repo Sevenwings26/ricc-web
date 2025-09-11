@@ -1,7 +1,7 @@
 import React from "react";
 import Lifted from "../Assets/Images/liftedHands.png";
 import discuss from "../Assets/Images/discuss.png";
-import bootcamp from "../Assets/Images/bootcamp.png";
+import codered from "../Assets/Images/codered.png";
 import media from "../Assets/Images/media.png";
 
 const Program = () => {
@@ -17,7 +17,7 @@ const Program = () => {
       text: "The organization shall conduct regular outreaches to spread the gospel and serve the community.",
     },
     {
-      image: bootcamp,
+      image: codered,
       title: "Bootcamps",
       text: "Intensive bootcamps shall be organized to train members through different demographic groups in leadership, evangelism, and matters that pertain to them.",
     },

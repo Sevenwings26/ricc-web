@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import {HeroImages} from "../Components/CarouselImages"
+import HeroImages from "../Components/CarouselImages"
 import Footer from "./Footer";
 import { NavData } from "../Components/NavData";
 import { IoMenu } from "react-icons/io5";
 import { IconContext } from "react-icons";
-
 
 const BaseLayout = () => {
   const location = useLocation();
@@ -17,7 +16,7 @@ const BaseLayout = () => {
   // Routing hero properties
   useEffect(() => {
     if (location.pathname === "/") {
-      setText1("Welcome To ");
+      setText1("Welcome to ");
     } else if (location.pathname === "/about") {
       setText1("Our Statement of Faith At ");
     } else if (location.pathname === "/mission") {
@@ -28,6 +27,8 @@ const BaseLayout = () => {
       setText1("Programs And Activities");
     } else if (location.pathname === "/ministries") {
       setText1("Ministries");
+    } else if (location.pathname === "/founder"){
+      setText1("Founder");
     }
 
     //
@@ -107,18 +108,18 @@ const BaseLayout = () => {
           />
 
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/50"></div>
 
           {/* Text overlay */}
-          <div className="flex flex-col items-center justify-center absolute inset-0 text-center px-4">
-            <p className="text-big-3xl font-semibold text-white leading-10 mobile:text-small-xl">
+          <div className="flex flex-col items-center justify-center absolute inset-0 text-center px-3">
+            <p className="text-3xl font-semibold text-white leading-10 sm:text-sm">
               {text1}
             </p>
-            <p className="text-big-3xl font-semibold text-accent mobile:text-small-xl">
-              Recharge International Christian Centre
+            <p className="text-3xl font-bold text-orange-500 sm:text:3xl uppercase">
+              Recharge Church
             </p>
             {location.pathname === "/" && (
-              <p className="text-white w-[70%] mx-auto">
+              <p className="text-white w-full mx-auto">
                 We are dedicated to raising Kingdom giants who are both kings
                 and priests, demonstrating excellence in spiritual leadership
                 and earthly relevance, do hereby establish{" "}

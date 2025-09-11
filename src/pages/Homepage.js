@@ -13,7 +13,7 @@ const Homepage = () => {
   return (
     <div className="w-full">
       {/* <p className="text-accent my-10 text-center"> */}
-      <div className="py-6 px-6 md:px-12 lg:px-24">
+      <div className="py-6 px-2 md:px-12 lg:px-24">
         <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
           About RICC
         </p>
@@ -92,8 +92,8 @@ const Homepage = () => {
       </div> */}
 
 
-      <div className="py-0 px-6 md:px-12 lg:px-24">
-        <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
+      <div className="py-0 px-0 md:px-12 lg:px-24">
+        <p className="text-orange-500 text-center text-lg mt-1 lg:text-4xl font-semibold uppercase tracking-wide">
           Activities And Programs
         </p>
         <Activities />
