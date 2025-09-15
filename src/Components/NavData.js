@@ -20,7 +20,11 @@ export const NavData = [
     path: "/programs",
   },
   {
-    name: "More",
+    name: "Ministries",
     path: "/ministries",
+  },
+  {
+    name: "Founder",
+    path: "/founder",
   },
 ];

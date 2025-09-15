@@ -12,6 +12,8 @@ import MissionPage from "./pages/MissionPage";
 import Membership from "./pages/Membership";
 import Program from "./pages/Program";
 import Ministries from "./pages/Ministries";
+import Founder from "./pages/Founder";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<BaseLayout />}>
@@ -21,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="/membership" element={<Membership />} />
       <Route path="/programs" element={<Program />} />
       <Route path="/ministries" element={<Ministries />} />
+      <Route path="/founder" element={<Founder />} />
     </Route>
   )
 );

@@ -3,8 +3,6 @@ import Block from "../Components/Block";
 import Values from "../Components/Values";
 import Mission from "../Components/Mission";
 import Boxcomponent from "../Components/Boxcomponent";
-import congregation from "../Assets/Images/congregate.png";
-import preacher from "../Assets/Images/preacher.png";
 import Button from "../Resources/button";
 import MinistryComponent from "../Components/MinistryComponent";
 import Activities from "../Components/Activities";
@@ -14,11 +12,9 @@ const Homepage = () => {
     <div className="w-full">
       {/* <p className="text-accent my-10 text-center"> */}
       <div className="py-6 px-2 md:px-12 lg:px-24">
-        <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
-          About RICC
-        </p>
+        {/* <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide"></p> */}
         <p className="text-center text-3xl">
-          We committed to
+          We are committed to
         </p>
         <div className="mt-2">
           <Block />

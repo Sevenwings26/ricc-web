@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
+// import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
+import Logo1 from "../Assets/Icons/RC-black-logo.jpg";
+import Logo2 from "../Assets/Icons/rechargelogo.png";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import HeroImages from "../Components/CarouselImages"
 import Footer from "./Footer";
@@ -27,8 +29,8 @@ const BaseLayout = () => {
       setText1("Programs And Activities");
     } else if (location.pathname === "/ministries") {
       setText1("Ministries");
-    } else if (location.pathname === "/founder"){
-      setText1("Founder");
+    // } else if (location.pathname === "/founder"){
+    //   setText1("Founder");
     }
 
     //
@@ -54,8 +56,10 @@ const BaseLayout = () => {
     <div className="">
       {/* header section starts */} 
       <header className="flex justify-between items-center py-2 px-4 sm:py-4 relative shadow-sm">
-        <div className="w-1/3 sm:w-1/4">
-          <img src={Logo} alt="Logo" className="h-10 sm:h-16 object-contain" />
+        <div className="w-1/3 sm:w-1/4 flex align-middle">
+          <img src={Logo1} alt="Logo" className="h-10 sm:h-16 object-contain" />
+          {/* <h2>RECHARGE </h2> <br/>
+          <h2>CHURCH</h2> */}
         </div>
 
         {/* Hamburger icon */}
@@ -91,66 +95,70 @@ const BaseLayout = () => {
       </header>
 
       {/* header section ends */}
-
-    {/* hero section starts */}
-    <div className="h-[100vh] relative overflow-hidden">
-      {HeroImages.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === current ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <img
-            src={slide.backgroundImage}
-            alt={slide.title}
-            className="object-cover w-full h-full"
-          />
-
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
-
-          {/* Text overlay */}
-          <div className="flex flex-col items-center justify-center absolute inset-0 text-center px-3">
-            <p className="text-3xl font-semibold text-white leading-10 sm:text-sm">
-              {text1}
-            </p>
-            <p className="text-3xl font-bold text-orange-500 sm:text:3xl uppercase">
-              Recharge Church
-            </p>
-            {location.pathname === "/" && (
-              <p className="text-white w-full mx-auto">
-                We are dedicated to raising Kingdom giants who are both kings
-                and priests, demonstrating excellence in spiritual leadership
-                and earthly relevance, do hereby establish{" "}
-              </p>
-            )}
-          </div>
-        </div>
-      ))}
-
-      {/* Hero Carousel indicators */}
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2">
-        {HeroImages.map((_, index) => (
-          <button
+      <div className="">
+        {location.pathname !== "/founder" && (
+        <div className="relative h-screen overflow-hidden">
+        {HeroImages.map((slide, index) => (
+          <div
             key={index}
-            onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full ${
-              index === current ? "bg-white" : "bg-gray-400"
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === current ? "opacity-100" : "opacity-0"
             }`}
-          />
+          >
+            <img
+              src={slide.backgroundImage}
+              alt={slide.title}
+              className="object-cover w-full h-full"
+            />
+
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-black/50"></div>
+
+            {/* Text overlay */}
+            <div className="flex flex-col items-center justify-center absolute inset-0 text-center px-6 md:px-12 lg:px-24">
+              {/* Main Heading */}
+              <h1 className="text-4xl md:text-5xl lg:text-4xl font-extrabold text-white leading-tight mb-2">
+                {text1}
+              </h1>
+
+              {/* Sub-heading */}
+              <p className="text-5xl md:text-3xl lg:text-7xl font-bold text-orange-500 uppercase">
+                Recharge Church
+              </p>
+
+              {location.pathname === "/" && (
+                <p className="text-2xl md:text-base lg:text-xl text-white mt-4 max-w-3xl">
+                  We are dedicated to raising Kingdom giants who are both kings
+                  and priests, demonstrating excellence in spiritual leadership
+                  and earthly relevance, do hereby establish{" "}
+                </p>
+              )}
+            </div>
+          </div>
         ))}
+
+        {/* Hero Carousel indicators */}
+        <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2">
+          {HeroImages.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index)}
+              className={`w-3 h-3 rounded-full ${
+                index === current ? "bg-white" : "bg-gray-400"
+              }`}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-
-
+      )}
+    
     <div className="">
       <Outlet />
       <Footer />
     </div>
-    {/* </div> */}
+      </div>
 
-    </div>
+  </div>
   );
 };
 
