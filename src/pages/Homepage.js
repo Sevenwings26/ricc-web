@@ -1,6 +1,7 @@
 import React from "react";
 import Block from "../Components/Block";
-import Values from "../Components/Values";
+// import Values from "../Components/Values";
+import CoreValues from "../Components/CoreValues";
 import Mission from "../Components/Mission";
 import Boxcomponent from "../Components/Boxcomponent";
 import Button from "../Resources/button";
@@ -21,11 +22,21 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="py-6 px-6 md:px-12 lg:px-24">
-        <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
+      <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
+        {/* <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
           Our Core Values
+        </p> */}
+        <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
+          Our Core Values
+        </h2>
+        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          The principles that define who we are, guide our actions, and shape our spiritual mission.
         </p>
-        <Values />
+
+        {/* <div className="text-center mb-12"> */}
+        {/* </div> */}
+
+        <CoreValues />
       </div>
 
       {/* <div className=" h-[600px] px-[150px] mobile:p-10 smtab:p-10">
@@ -69,26 +80,7 @@ const Homepage = () => {
           {/* <Button outline btnName="See All Ministries" /> */}
         </div>
       </div>
-
-        {/* membership section  */}
-      {/* <div className="my-20 bg-black px-[150px] mobile:p-10 py-10 mobile:my-10">
-        <Boxcomponent
-          headStyle="leading-10 mobile:text-center"
-          bodyStyle="flex-row-reverse gap-10  "
-          imageSize="w-[100%] h-[100%] mobile:w-full"
-          title="Membership And Governance"
-          textBody="The organization shall be governed by a Board of Directors, consisting of a President/Founder, Vice President, Secretary, Treasurer, and members of an executive committee that would relate in direct line with different groups in the membership"
-          textStyle="text-white w-[50%] mobile:w-[100%] mobile:text-center"
-          bodyImage={preacher}
-        >
-          <div className="my-5 flex items-center mobile:justify-center">
-            <Button btnName="Learn more" />
-          </div>
-        </Boxcomponent>
-      </div> */}
-
-
-      <div className="py-0 px-0 md:px-12 lg:px-24">
+      <div className="py-6 px-0 md:px-12 lg:px-24">
         <p className="text-orange-500 text-center text-lg mt-1 lg:text-4xl font-semibold uppercase tracking-wide">
           Activities And Programs
         </p>

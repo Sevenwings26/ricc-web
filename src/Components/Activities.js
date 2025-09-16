@@ -70,7 +70,8 @@ return (
           {Activities.map((activity, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 px-1"
+              // className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 px-1"
+              className="flex-shrink-0 w-1/2 px-1 md:w-1/3 lg:w-1/4 xl:w-1/5"
             >
               <div
                 className="w-full h-48 md:h-56 lg:h-64 rounded-xl overflow-hidden shadow-lg cursor-pointer"

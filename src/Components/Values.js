@@ -5,8 +5,9 @@ import charisma from "../Assets/Icons/Charisma.svg";
 import holiness from "../Assets/Icons/Holiness.svg";
 import accountable from "../Assets/Icons/accountability.svg";
 import retreat from "../Assets/Icons/retreat.svg";
-import grace from "../Assets/Icons/Grace.svg";
-import Excellence from "../Assets/Icons/Excellence.svg";
+import guts from "../Assets/Icons/Grace.svg";
+import evangelism from "../Assets/Icons/Excellence.svg";
+
 
 const Values = () => {
   const coreValues = [
@@ -41,14 +42,14 @@ const Values = () => {
       title: "etreat",
     },
     {
-      icon: grace,
+      icon: guts,
       initial: "G",
-      title: "race",
+      title: "uts",
     },
     {
-      icon: Excellence,
+      icon: evangelism,
       initial: "E",
-      title: "xellence",
+      title: "vangelism",
     },
   ];
   return (
@@ -92,3 +93,15 @@ const Values = () => {
 };
 
 export default Values;
+
+
+
+
+// revival
+// empathy
+// charisma
+// holiness
+// accountability
+// retreat
+// guts
+// evangelism
