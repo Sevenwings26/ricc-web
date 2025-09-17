@@ -10,24 +10,25 @@ import { IoLogoInstagram, IoMail, IoLogoFacebook, IoLogoWhatsapp } from "react-i
 import { IconContext } from "react-icons";
 
 const Footer = () => {
-  const Social = [
+    const Social = [
     {
-      icon: <IoLogoWhatsapp />,
-      link: "/+2348158639668",
+        icon: <IoLogoWhatsapp />,
+        link: "https://wa.me/2348158639668",
     },
     {
-      icon: <IoLogoInstagram />,
-      link: "/https://www.instagram.com/rechargechurchglobal?igsh=MWY2cWtndGx3eG02Nw%3D%3D&utm_source=qr",
+        icon: <IoLogoInstagram />,
+        link: "https://www.instagram.com/rechargechurchglobal?igsh=MWY2cWtndGx3eG02Nw%3D%3D&utm_source=qr",
     },
     {
-      icon: <IoLogoFacebook />,
-      link: "/https://www.facebook.com/share/16KtFm2oPr/?mibextid=wwXIfr",
+        icon: <IoLogoFacebook />,
+        link: "https://www.facebook.com/share/16KtFm2oPr/?mibextid=wwXIfr",
     },
     {
-      icon: <IoMail />,
-      link: "/Info@rechargechurch.ng",
+        icon: <IoMail />,
+        link: "mailto:Info@rechargechurch.ng",
     },
-  ];
+    ];
+
   return (
     <div>
 
@@ -98,14 +99,20 @@ const Footer = () => {
                     <div className="flex items-center justify-center space-x-4 md:justify-start">
                     {Social.map((item, index) => (
                         <div key={index}>
-                        <Link to={item.link} className="text-gray-700 hover:text-orange-500 transition-colors duration-200">
+                        <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-700 hover:text-orange-500 transition-colors duration-200"
+                        >
                             {item.icon}
-                        </Link>
+                        </a>
                         </div>
                     ))}
                     </div>
                 </IconContext.Provider>
                 </div>
+
             </div>
         </footer>
         <div>
