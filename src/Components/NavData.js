@@ -15,10 +15,10 @@ export const NavData = [
     name: "Membership",
     path: "/membership",
   },
-  {
-    name: "Programs",
-    path: "/programs",
-  },
+  // {
+  //   name: "Programs",
+  //   path: "/programs",
+  // },
   {
     name: "Ministries",
     path: "/ministries",

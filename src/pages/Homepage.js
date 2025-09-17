@@ -7,6 +7,7 @@ import Boxcomponent from "../Components/Boxcomponent";
 import Button from "../Resources/button";
 import MinistryComponent from "../Components/MinistryComponent";
 import Activities from "../Components/Activities";
+import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -23,19 +24,12 @@ const Homepage = () => {
       </div>
 
       <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
-        {/* <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
-          Our Core Values
-        </p> */}
         <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
           Our Core Values
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
           The principles that define who we are, guide our actions, and shape our spiritual mission.
         </p>
-
-        {/* <div className="text-center mb-12"> */}
-        {/* </div> */}
-
         <CoreValues />
       </div>
 
@@ -57,33 +51,35 @@ const Homepage = () => {
         />
       </div> */}
 
-      <div className="py-6 px-6 md:px-12 lg:px-24">
-        <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
+      <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
+        <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
           Ministries
-        </p>
+        </h2>
+        {/* <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          The principles that define who we are, guide our actions, and shape our spiritual mission.
+        </p> */}
         <MinistryComponent />
       </div>
 
-        
-       {/* updated membership section */}
-      <div className="py-6 px-6 md:px-12 lg:px-24">
-        <div className="text-center max-w-4xl mx-auto">
-          <p className="text-orange-500 mb-2 text-center text-lg mt-5 lg:text-4xl font-semibold uppercase tracking-wide">
-          {/* <h2 className="text-orange-500 mb-4 text-2xl lg:text-3xl font-extrabold uppercase tracking-widest"> */}
+      <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
+        <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
             Membership and Governance
-          </p>
-          {/* </h2> */}
-          <p className="text-lg md:text-xl text-gray-800 mb-4 leading-relaxed">
-            The organization shall be governed by a Board of Directors, consisting of a President/Founder, Vice President, Secretary, Treasurer, and members of an executive committee that would relate in direct line with different groups in the membership.
-          </p>
-          <Button outline btnName="Learn more" className=""/>
-          {/* <Button outline btnName="See All Ministries" /> */}
-        </div>
-      </div>
-      <div className="py-6 px-0 md:px-12 lg:px-24">
-        <p className="text-orange-500 text-center text-lg mt-1 lg:text-4xl font-semibold uppercase tracking-wide">
-          Activities And Programs
+        </h2>
+        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          The organization shall be governed by a Board of Directors, consisting of a President/Founder, Vice President, Secretary, Treasurer, and members of an executive committee that would relate in direct line with different groups in the membership.
         </p>
+        <NavLink to="/membership">
+          <Button outline btnName="Learn more" className=""/>
+        </NavLink>
+      </div>
+
+      <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
+        <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
+          Activities And Programs
+        </h2>
+        {/* <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          The principles that define who we are, guide our actions, and shape our spiritual mission.
+        </p> */}
         <Activities />
       </div>
     </div>

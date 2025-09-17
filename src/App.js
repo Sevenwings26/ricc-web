@@ -14,6 +14,7 @@ import Program from "./pages/Program";
 import Ministries from "./pages/Ministries";
 import Founder from "./pages/Founder";
 
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<BaseLayout />}>

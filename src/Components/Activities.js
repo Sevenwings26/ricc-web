@@ -14,37 +14,37 @@ const Activities = () => {
       {
         image: biblestudy,
         title: "Bible Study",
-        text: "The organization shall conduct regular outreaches to spread the gospel and serve the community.",
+        text: "",
       },
       {
         image: behindbars,
         title: "Jesus Behind Bars",
-        text: "It is a prison outreach",
+        text: "Bringing Hope, Healing, and Transformation to Inmates.",
       },
       {
         image: pbootcamp,
         title: "Prophetic Bootcamp",
-        text: "Prophetic training",
+        text: "",
       },
       {
         image: prayerwatch,
         title: "Prayer Watch",
-        text: "Praying at intervals, pray without seizing",
+        text: "",
       },
       {
         image: mountainprayer,
         title: "Mountain Prayer",
-        text: "Mountain Prayer meeting comes up........",
+        text: "",
       },
       {
         image: rechargeOAU,
         title: "Campus Misson",
-        text: "Taking Jesus to our campus",
+        text: "",
       },
       {
         image: sundays,
         title: "Sunday service",
-        text: "Sunday Services",
+        text: "",
       },
     ];
 

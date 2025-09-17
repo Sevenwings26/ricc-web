@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import { NavData } from "../Components/NavData";
 import { IoMenu } from "react-icons/io5";
 import { IconContext } from "react-icons";
+import ScrollToTop from "./ScrollToTop";
 
 const BaseLayout = () => {
   const location = useLocation();
@@ -54,6 +55,7 @@ const BaseLayout = () => {
 
   return (
     <div className="">
+      <ScrollToTop />
       {/* header section starts */} 
       <header className="flex justify-between items-center py-2 px-4 sm:py-4 relative shadow-sm">
         <div className="w-1/3 sm:w-1/4 flex align-middle">
@@ -156,8 +158,7 @@ const BaseLayout = () => {
       <Outlet />
       <Footer />
     </div>
-      </div>
-
+  </div>
   </div>
   );
 };

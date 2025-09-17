@@ -1,33 +1,31 @@
 import React from "react";
 // import Button from "./button";
 // import Inputs from "./Inputs";
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+
 import { NavData } from "../Components/NavData";
 import { Link } from "react-router-dom";
 import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
-import { IoLogoInstagram, IoLogoTwitter, IoMail, IoLogoFacebook, IoLogoWhatsapp } from "react-icons/io5";
+import { IoLogoInstagram, IoMail, IoLogoFacebook, IoLogoWhatsapp } from "react-icons/io5";
 import { IconContext } from "react-icons";
 
 const Footer = () => {
   const Social = [
     {
       icon: <IoLogoWhatsapp />,
-      link: "/",
+      link: "/+2348158639668",
     },
     {
       icon: <IoLogoInstagram />,
-      link: "/",
+      link: "/https://www.instagram.com/rechargechurchglobal?igsh=MWY2cWtndGx3eG02Nw%3D%3D&utm_source=qr",
     },
     {
       icon: <IoLogoFacebook />,
-      link: "/",
+      link: "/https://www.facebook.com/share/16KtFm2oPr/?mibextid=wwXIfr",
     },
     {
       icon: <IoMail />,
-      link: "/",
-    },
-    {
-      icon: <IoLogoTwitter />,
-      link: "/",
+      link: "/Info@rechargechurch.ng",
     },
   ];
   return (
@@ -86,9 +84,9 @@ const Footer = () => {
                 <ul className="flex flex-col items-center space-y-2 text-xl md:flex-row md:space-x-8 md:space-y-0 md:text-base">
                 {NavData.map((item, index) => (
                     <li key={index}>
-                    <Link to={item.path} className="text-gray-700 hover:text-black transition-colors duration-200">
+                    <NavLink to={item.path} className="text-gray-700 hover:text-black transition-colors duration-200">
                         {item.name}
-                    </Link>
+                    </NavLink>
                     </li>
                 ))}
                 </ul>
@@ -111,15 +109,11 @@ const Footer = () => {
             </div>
         </footer>
         <div>
-            <p className=" bg-orange-500 text-gray-700 text-center lg:text-3xl md:text-2xl sm:text-xs py-2">
-                &copy;2025 Recharge International Christian Centre. Rights reserved
+            <p className=" bg-orange-500 text-gray-700 text-center lg:text-3xl md:text-2xl sm:text-sm py-4">
+            &copy;2025 Recharge International Christian Centre. Rights reserved
             </p>
         </div>
-
     </div>
-
-
-
   );
 };
 
