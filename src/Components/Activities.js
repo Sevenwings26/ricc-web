@@ -19,7 +19,8 @@ const Activities = () => {
       {
         image: behindbars,
         title: "Jesus Behind Bars",
-        text: "Bringing Hope, Healing, and Transformation to Inmates.",
+        text: "",
+        // text: "Bringing Hope, Healing, and Transformation to Inmates.",
       },
       {
         image: pbootcamp,
@@ -113,7 +114,6 @@ return (
               <div className="my-5">
                 <p className="flex items-center text-lg font-bold">
                   <span>{activity.title}</span>
-                  {/* <IoArrowForward className="ml-2 text-orange-500" /> */}
                 </p>
                 <p className="text-sm text-gray-600 mt-1">{activity.text}</p>
               </div>

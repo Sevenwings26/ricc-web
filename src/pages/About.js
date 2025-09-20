@@ -1,26 +1,28 @@
 import React from "react";
 import Block from "../Components/Block";
+import Mission from "../Components/Mission";
 import CoreValues from "../Components/CoreValues";
 
 // import 
 
 const About = () => {
   return (
-    <div className="px-[150px] mobile:px-10 ">
-      <div className="my-10 mobile:py-5 mobile:text-center">
+    <div className="px-6 ">
+      <div className="my-10 sm:py-5 text-center">
         <p>
-          We, the members of RECHARGE CHURCH, dedicated
-          to raising Kingdom giants who are both kings and priests,
-          demonstrating excellence in spiritual leadership and earthly
-          relevance, do hereby establish this constitution to govern our
-          organization, promote our core values, and fulfill our mission and
-          vision.
+          We, the members of RECHARGE CHURCH, are dedicated to raising Kingdom giants who are both kings and priests—demonstrating excellence in spiritual leadership and earthly relevance. In this commitment, we hereby establish this constitution to govern our organization, uphold our core values, and advance our mission and vision.
         </p>
       </div>
 
       <div className=" ">
         <Block />
       </div>
+      
+      <div className=" ">
+        <Mission />
+      </div>
+
+      
       
       <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
         <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">

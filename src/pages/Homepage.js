@@ -32,25 +32,6 @@ const Homepage = () => {
         </p>
         <CoreValues />
       </div>
-
-      {/* <div className=" h-[600px] px-[150px] mobile:p-10 smtab:p-10">
-        <Mission />
-      </div> */}
-
-      {/* <div className="my-10  px-[150px] mobile:p-10 smtab:p-10">
-        <Boxcomponent
-          headStyle="text-center"
-          bodyStyle="items-center gap-10"
-          title="Vision"
-          textBody="Our vision is to raise Kingdom giants 
-                    who are both kings and priests, 
-                    demonstrating excellence in spiritual 
-                    leadership and earthly relevance."
-          textStyle="text-center"
-          bodyImage={congregation}
-        />
-      </div> */}
-
       <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
         <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
           Ministries
@@ -63,7 +44,7 @@ const Homepage = () => {
 
       <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
         <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
-            Membership and Governance
+            Membership & Governance
         </h2>
         <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
           The organization shall be governed by a Board of Directors, consisting of a President/Founder, Vice President, Secretary, Treasurer, and members of an executive committee that would relate in direct line with different groups in the membership.
@@ -75,11 +56,11 @@ const Homepage = () => {
 
       <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
         <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
-          Activities And Programs
+          Activities & Programs
         </h2>
-        {/* <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          The principles that define who we are, guide our actions, and shape our spiritual mission.
-        </p> */}
+        <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+          We welcome you to experience the life-changing presence of God with us. Our doors are open <span className="font-semibold">every Sunday</span> for worship, <span className="font-semibold">every Thursday</span> for midweek encounters, and at different times for retreats, evangelism outreaches, and prophetic programs. 
+        </p>
         <Activities />
       </div>
     </div>

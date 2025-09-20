@@ -70,7 +70,7 @@ const Founder = () => {
             {!showMinistry ? (
               <button
                 onClick={() => setShowMinistry(true)}
-                className="mt-2 text-orange-600 font-semibold hover:underline"
+                className="mt-2 text-orange-600 text-center italic hover:underline"
               >
                 Read Full Ministry Biography
               </button>
@@ -101,7 +101,8 @@ const Founder = () => {
                 </p>
                 <button
                   onClick={() => setShowMinistry(false)}
-                  className="mt-4 text-sm text-gray-500 underline"
+                  className="mt-2 text-gray-600 text-center italic hover:underline"
+
                 >
                   Hide Ministry Biography
                 </button>
@@ -136,7 +137,7 @@ const Founder = () => {
             {!showCorporate ? (
               <button
                 onClick={() => setShowCorporate(true)}
-                className="mt-6 text-orange-600 font-semibold hover:underline"
+                className="mt-2 text-orange-600 text-center italic hover:underline"
               >
                 Read Full Corporate Profile
               </button>
@@ -165,7 +166,7 @@ const Founder = () => {
                 </p>
                 <button
                   onClick={() => setShowCorporate(false)}
-                  className="mt-4 text-sm text-gray-500 underline"
+                  className="mt-2 text-gray-600 text-center italic hover:underline"
                 >
                   Hide Corporate Profile
                 </button>

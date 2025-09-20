@@ -1,30 +1,35 @@
 import React from "react";
-// import Button from "./button";
-// import Inputs from "./Inputs";
-import { NavLink, Outlet, useLocation } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
 import { NavData } from "../Components/NavData";
-import { Link } from "react-router-dom";
-import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
-import { IoLogoInstagram, IoMail, IoLogoFacebook, IoLogoWhatsapp } from "react-icons/io5";
+import Logo1 from "../Assets/Icons/RC-black-logo.jpg";
+import { IoIosMail } from "react-icons/io";
+import { FaYoutube, FaSpotify, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { IconContext } from "react-icons";
 
 const Footer = () => {
     const Social = [
     {
-        icon: <IoLogoWhatsapp />,
+        icon: <FaWhatsapp />,
         link: "https://wa.me/2348158639668",
     },
     {
-        icon: <IoLogoInstagram />,
+        icon: <FaInstagram />,
         link: "https://www.instagram.com/rechargechurchglobal?igsh=MWY2cWtndGx3eG02Nw%3D%3D&utm_source=qr",
     },
     {
-        icon: <IoLogoFacebook />,
+        icon: <FaFacebook />,
         link: "https://www.facebook.com/share/16KtFm2oPr/?mibextid=wwXIfr",
     },
     {
-        icon: <IoMail />,
+        icon: <FaYoutube />,
+        link: "https://youtube.com/@rechargechurchglobal?si=t15oi5oh-YDipKy5",
+    },
+    {
+        icon: <FaSpotify />,
+        link: "https://open.spotify.com/show/2X9j6F5KZl6PpSeKGC8yp0",
+    },
+    {
+        icon: <IoIosMail />,
         link: "mailto:Info@rechargechurch.ng",
     },
     ];
@@ -32,52 +37,58 @@ const Footer = () => {
   return (
     <div>
 
-        <div className="bg-black text-white py-12 px-6 md:px-12">
-            <div className="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between space-y-8 md:space-y-0">
+    <div className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-16 px-6 md:px-12">
+    <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* Text Section */}
+        <div className="space-y-6">
+        <h3 className="text-3xl font-bold text-orange-500">Ways to Give / Donate</h3>
+        <p className="text-gray-300 leading-relaxed max-w-lg">
+            Giving is an act of worship and a way to partner with God’s work on earth. 
+            Every seed sown helps us advance the gospel, reach nations, and transform lives. 
+            Thank you for being a part of this mission.
+        </p>
+        </div>
 
-            {/* Text and Title Section */}
-            <div className="md:w-1/2">
-                <h3 className="text-2xl font-bold text-orange-500 mb-4">Ways to Give / Donate</h3>
-                <p className="text-gray-300 mb-2 max-w-lg">
-                We give not out of compulsion or fear, but out of a desire to see the gospel prosper in our day.
-                </p>
+        {/* Donation Cards Section */}
+        <div className="space-y-6">
+        <p className="text-lg font-semibold">Account Name: 
+            <span className="block font-normal text-gray-200">
+            Recharge Global Christian Network
+            </span>
+        </p>
+
+        <div className="grid sm:grid-cols-2 gap-6">
+            {/* Naira */}
+            <div className="bg-white text-black rounded-xl shadow-lg p-4 hover:scale-105 transform transition">
+            <p className="font-semibold  text-gray-600 text-lg">Naira Account</p>
+            <p className="text-xl">1027684428</p>
             </div>
 
-            {/* Donation Details Section */}
-            <div className="md:w-1/2 md:text-right">
-                <div className="flex flex-col space-y-4">
-                <p className="text-lg font-semibold text-white">
-                    Account Name: <span className="font-normal text-gray-300">Recharge Global Christian Network</span>
-                </p>
-                <div className="flex flex-col space-y-2">
-                    {/* Donation Accounts */}
-                    <div className="bg-white text-black p-2 rounded-lg shadow-inner">
-                    <p className="font-semibold text-lg">Naira Account</p>
-                    <p className="text-sm">1027684428</p>
-                    </div>
-                    <div className="bg-white text-black p-2 rounded-lg shadow-inner">
-                    <p className="font-semibold text-lg">USD Account</p>
-                    <p className="text-sm">3004627134</p>
-                    </div>
-                    <div className="bg-white text-black p-2 rounded-lg shadow-inner">
-                    <p className="font-semibold text-lg">Pounds Account</p>
-                    <p className="text-sm">3004627165</p>
-                    </div>
-                </div>
-                </div>
+            {/* USD */}
+            <div className="bg-white text-black rounded-xl shadow-lg p-4 hover:scale-105 transform transition">
+            <p className="font-semibold text-gray-600 text-lg">USD Account</p>
+            <p className="text-xl">3004627134</p>
             </div>
+
+            {/* Pounds */}
+            <div className="bg-white text-black rounded-xl shadow-lg p-4 hover:scale-105 transform transition">
+            <p className="font-semibold text-gray-600 text-lg">Pounds Account</p>
+            <p className="text-xl">3004627165</p>
             </div>
         </div>
+        </div>
+    </div>
+    </div>
 
   {/* to get update? */}
 
         <footer className="bg-white text-gray-700 py-4 px-6 border-t border-gray-200 md:px-10">
-            <div className="container mx-auto flex flex-col items-center space-y-8 md:flex-row md:justify-between md:space-y-0">
+            <div className="container mx-auto flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
 
                 {/* Logo Section */}
                 <div className="w-full text-center inline-block md:w-auto md:text-left">
                     <div className="inline-block rounded-lg">
-                        <img src={Logo} alt="Logo" className=""/>
+                        <img src={Logo1} alt="Logo" className="h-10 sm:h-30 object-contain"/>
                     </div>
                 </div>
 
