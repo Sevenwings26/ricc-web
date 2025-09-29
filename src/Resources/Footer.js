@@ -5,6 +5,7 @@ import Logo1 from "../Assets/Icons/RC-black-logo.jpg";
 import { IoIosMail } from "react-icons/io";
 import { FaYoutube, FaSpotify, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { IconContext } from "react-icons";
+import WaysToGive from "../Components/WaysToGive";
 
 const Footer = () => {
     const Social = [
@@ -37,48 +38,7 @@ const Footer = () => {
   return (
     <div>
 
-    <div className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-16 px-6 md:px-12">
-    <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center">
-        {/* Text Section */}
-        <div className="space-y-6">
-        <h3 className="text-3xl font-bold text-orange-500">Ways to Give / Donate</h3>
-        <p className="text-gray-300 leading-relaxed max-w-lg">
-            Giving is an act of worship and a way to partner with God’s work on earth. 
-            Every seed sown helps us advance the gospel, reach nations, and transform lives. 
-            Thank you for being a part of this mission.
-        </p>
-        </div>
-
-        {/* Donation Cards Section */}
-        <div className="space-y-6">
-        <p className="text-lg font-semibold">Account Name: 
-            <span className="block font-normal text-gray-200">
-            Recharge Global Christian Network
-            </span>
-        </p>
-
-        <div className="grid sm:grid-cols-2 gap-6">
-            {/* Naira */}
-            <div className="bg-white text-black rounded-xl shadow-lg p-4 hover:scale-105 transform transition">
-            <p className="font-semibold  text-gray-600 text-lg">Naira Account</p>
-            <p className="text-xl">1027684428</p>
-            </div>
-
-            {/* USD */}
-            <div className="bg-white text-black rounded-xl shadow-lg p-4 hover:scale-105 transform transition">
-            <p className="font-semibold text-gray-600 text-lg">USD Account</p>
-            <p className="text-xl">3004627134</p>
-            </div>
-
-            {/* Pounds */}
-            <div className="bg-white text-black rounded-xl shadow-lg p-4 hover:scale-105 transform transition">
-            <p className="font-semibold text-gray-600 text-lg">Pounds Account</p>
-            <p className="text-xl">3004627165</p>
-            </div>
-        </div>
-        </div>
-    </div>
-    </div>
+    < WaysToGive/>
 
   {/* to get update? */}
 

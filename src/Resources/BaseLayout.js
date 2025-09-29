@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 // import Logo from "../Assets/Icons/RECHARGE CHRISTION CENTER LOGO 1.svg";
 import Logo1 from "../Assets/Icons/RC-black-logo.jpg";
-import Logo2 from "../Assets/Icons/rechargelogo.png";
+// import Logo1 from "../Assets/Icons/RC-black-logo1.jpg";
+// import Logo2 from "../Assets/Icons/rechargelogo.png";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import HeroImages from "../Components/CarouselImages"
 import Footer from "./Footer";
@@ -56,13 +57,12 @@ const BaseLayout = () => {
   return (
     <div className="">
       <ScrollToTop />
-      {/* header section starts */} 
-      <header className="flex justify-between items-center py-2 px-4 sm:py-4 relative shadow-sm">
-        <div className="w-1/3 sm:w-1/4 flex align-middle">
-          <img src={Logo1} alt="Logo" className="h-10 sm:h-16 object-contain" />
-          {/* <h2>RECHARGE </h2> <br/>
-          <h2>CHURCH</h2> */}
+      {/* header section starts */}   
+      <header className="flex justify-between items-center py-0 px-4 sm:py-4 relative shadow-sm">
+        <div className="w-2/3 sm:w-1/2 flex items-center">
+          <img src={Logo1} alt="Logo" className="h-32 sm:h-6 md:h-24 object-contain" />
         </div>
+
 
         {/* Hamburger icon */}
         <div className="md:hidden cursor-pointer" onClick={handleNav}>

@@ -28,16 +28,10 @@ const Founder = () => {
       {/* Intro Section */}
       <div className="text-center px-6 md:px-0 max-w-4xl mx-auto mb-12">
         <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-          Charles Alade is a dynamic figure whose influence spans media,
-          advertising, creative enterprise, and Christian ministry. He embodies
-          the rare blend of strategic business leadership and prophetic
-          spiritual insight, making him one of the most versatile voices of our
-          generation.
+          Charles Alade is a dynamic figure whose influence spans across media, advertising, creative enterprise, and Christian ministry. He embodies the rare blend of strategic business leadership and prophetic spiritual insight, making him one of the most versatile voices of our generation.
         </p>
         <p className="text-lg md:text-xl leading-relaxed mt-4 text-gray-700">
-          Whether behind a microphone, in the boardroom, or on the prayer altar,
-          Charles consistently delivers with excellence, impact, and
-          authenticity.
+          Whether behind a microphone, in the boardroom, or on the prayer altar, Charles consistently delivers with excellence, impact, and authenticity.
         </p>
       </div>
 
