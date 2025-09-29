@@ -60,7 +60,7 @@ const BaseLayout = () => {
       {/* header section starts */}   
       <header className="flex justify-between items-center py-0 px-4 sm:py-4 relative shadow-sm">
       <div className="w-2/3 sm:w-1/4 flex items-center">
-        <img src={Logo1} alt="Logo" className="h-10 sm:h-6 md:h-24 object-contain" />
+        <img src={Logo1} alt="Logo" className="h-16 sm:h-20 md:h-24 object-contain" />
       </div>
 
         {/* Hamburger icon */}
@@ -98,7 +98,7 @@ const BaseLayout = () => {
       {/* header section ends */}
       <div className="">
         {location.pathname !== "/founder" && (
-        <div className="relative h-screen overflow-hidden">
+        <div className="relative h-screen sm:h-[90vh] md:h-screen overflow-hidden">
         {HeroImages.map((slide, index) => (
           <div
             key={index}
