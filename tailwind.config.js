@@ -30,7 +30,7 @@
 // };
 
 
-// /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -80,10 +80,10 @@ module.exports = {
         slideIn: "slidein 1s ease-in-out",
         // fade: "fader s linear infinite",
       },
-      backgroundImage: {
-        hands: "url('../src/Assets/Images/fathertochild.png')",
-        gather: "url('../src/Assets/Images/gather.png')",
-      },
+      // backgroundImage: {
+      //   hands: "url('../src/Assets/Images/fathertochild.png')",
+      //   gather: "url('../src/Assets/Images/gather.png')",
+      // },
 
       screens: {
         mobile: { max: "480px" },
