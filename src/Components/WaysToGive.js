@@ -29,9 +29,9 @@ const WaysToGive = () => {
       </div>
 
       <div className="py-3 text-center">
-        <p className="text-xs uppercase tracking-wide text-gray-500">Account Name</p>
-        <p className="font-bold text-gray-900 text-3xl">Recharge Global Christian Network</p>
-        <p className="font-bold text-gray-900 text-3xl">United Bank of Africa (UBA)</p>
+        <p className="uppercase tracking-wide text-2xl text-gray-500">Account Name</p>
+        <p className="font-bold uppercase text-gray-900 text-3xl">Recharge Global Christian Network</p>
+        <p className="font-bold text-gray-700 text-3xl">United Bank of Africa (UBA)</p>
       </div>
 
       {/* Accounts Grid */}
