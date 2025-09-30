@@ -8,7 +8,7 @@ import CoreValues from "../Components/CoreValues";
 const About = () => {
   return (
     <div className="px-6 ">
-      <div className="my-10 sm:py-5 text-center">
+      <div className="my-5 sm:py-5 px-10 sm:px-0 text-center">
         <p>
           We, the members of RECHARGE CHURCH, are dedicated to raising Kingdom giants who are both kings and priests—demonstrating excellence in spiritual leadership and earthly relevance. In this commitment, we hereby establish this constitution to govern our organization, uphold our core values, and advance our mission and vision.
         </p>

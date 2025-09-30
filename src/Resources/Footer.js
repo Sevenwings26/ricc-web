@@ -39,9 +39,6 @@ const Footer = () => {
     <div>
 
     < WaysToGive/>
-
-  {/* to get update? */}
-
         <footer className="bg-white text-gray-700 py-4 px-6 border-t border-gray-200 md:px-10">
             <div className="container mx-auto flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
 
@@ -87,7 +84,7 @@ const Footer = () => {
             </div>
         </footer>
         <div>
-            <p className=" bg-orange-500 text-gray-700 text-center lg:text-3xl md:text-2xl sm:text-sm py-4">
+            <p className=" bg-orange-600 text-gray-900 text-center lg:text-2xl md:text-2xl sm:text-sm py-2">
             &copy;2025 Recharge International Christian Centre. Rights reserved
             </p>
         </div>

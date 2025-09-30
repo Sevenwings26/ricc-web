@@ -52,7 +52,7 @@ const WaysToGive = () => {
           </div>
 
           <button
-            className="mt-1 text-sm text-orange-600"
+            className="mt-1 text-sm text-orange-600 italic"
             onClick={() => setShowUSD(!showUSD)}
           >
             {showUSD ? "Hide Transfer Instructions" : "View Transfer Instructions"}
@@ -77,7 +77,7 @@ const WaysToGive = () => {
             <p className="text-2xl font-bold">3004627165</p>
           </div>
           <button
-            className="mt-1 text-sm text-orange-600"
+            className="mt-1 text-sm text-orange-600 italic"
             onClick={() => setShowGBP(!showGBP)}
           >
             {showGBP ? "Hide Transfer Instructions" : "View Transfer Instructions"}
@@ -102,7 +102,7 @@ const WaysToGive = () => {
             <p className="text-2xl font-bold">0013664082</p>
           </div>
           <button
-            className="mt-1 text-sm text-orange-600"
+            className="mt-1 text-sm text-orange-600 italic"
             onClick={() => setShowEUR(!showEUR)}
           >
             {showEUR ? "Hide Transfer Instructions" : "View Transfer Instructions"}

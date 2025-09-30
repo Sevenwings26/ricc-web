@@ -52,12 +52,10 @@ module.exports = {
         "large-3xl": ["5.25rem"], //84px
         "huge-xl": ["5.75rem"], //92px
       },
-
-      colors: {
-        accent: "#FF9500",
-        faded: "#FF95004D",
+      fontFamily: {
+        arimo: ['Arimo', 'sans-serif'],
+        sans: ['Arimo', 'sans-serif'],
       },
-
       keyframes: {
         slideshow: {
           from: { transform: "translateX(0%)" },

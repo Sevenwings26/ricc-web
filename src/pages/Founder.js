@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import founderImage from "../Assets/Images/profile/CharlesAladeprofile1.jpg";
 import corporateImage from "../Assets/Images/profile/CharlesAladeprofile1.jpg";
+import corporateI from "../Assets/Images/profile/CharlesAlade4.jpg";
 import ministryImage from "../Assets/Images/profile/CharlesAladeprofile2.jpg";
 
 
@@ -13,14 +13,14 @@ const Founder = () => {
       {/* Profile Hero Section */}
       <div className="text-center max-w-5xl mx-auto mb-12">
         <img
-          src={founderImage}
+          src={corporateImage}
           alt="Charles Alade"
           className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full mx-auto shadow-lg border-4 border-orange-500"
         />
         <h1 className="mt-6 text-3xl md:text-4xl lg:text-5xl font-bold text-orange-600">
           Apostle Charles Alade
         </h1>
-        <p className="mt-2 text-lg px-6 md:px-0 md:text-xl font-medium text-gray-600">
+        <p className="mt-2 text-lg px-6 md:px-0 md:text-xl font-semibold text-gray-600">
           A Visionary Leader in Media, Business, and Ministry
         </p>
       </div>
@@ -110,7 +110,7 @@ const Founder = () => {
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Corporate Image (optional) */}
           <img
-            src={corporateImage}
+            src={corporateI}
             alt="Corporate Charles"
             className="w-full lg:w-1/3 object-cover p-3"
           />
