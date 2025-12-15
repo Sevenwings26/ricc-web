@@ -8,6 +8,9 @@ import Button from "../Resources/button";
 import MinistryComponent from "../Components/MinistryComponent";
 import Activities from "../Components/Activities";
 import { NavLink } from "react-router-dom";
+// import Campuses from "../Components/Campuses";
+import Campuses1 from "../Components/Campuses1";
+
 
 const Homepage = () => {
   return (
@@ -32,15 +35,21 @@ const Homepage = () => {
         </p>
         <CoreValues />
       </div>
+
       <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
         <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
           Ministries
         </h2>
-        {/* <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-          The principles that define who we are, guide our actions, and shape our spiritual mission.
-        </p> */}
         <MinistryComponent />
       </div>
+      
+      <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
+        <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
+          Campuses
+        </h2>
+        <Campuses1 />
+      </div>
+      
 
       <div className="py-6 px-6 md:px-12 lg:px-24 text-center">
         <h2 className="text-orange-500 mt-5 mb-2 text-3xl md:text-4xl font-bold uppercase lg:text-4xl">
@@ -63,6 +72,7 @@ const Homepage = () => {
         </p>
         <Activities />
       </div>
+      
     </div>
   );
 };

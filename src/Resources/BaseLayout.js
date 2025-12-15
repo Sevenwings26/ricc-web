@@ -131,7 +131,7 @@ const BaseLayout = () => {
                 <p className="text-2xl md:text-base lg:text-xl text-white mt-4 max-w-3xl">
                   We are dedicated to raising Kingdom giants who are both kings
                   and priests, demonstrating excellence in spiritual leadership
-                  and earthly relevance, do hereby establish{" "}
+                  and earthly relevance.{" "}
                 </p>
               )}
             </div>
