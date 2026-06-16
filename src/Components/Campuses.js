@@ -17,7 +17,7 @@ const Campuses = () => {
     {
       centre: "Atlanta, Georgia",
       mode: "Online & On-site",
-      phone: "+1(941)730-2274",
+      phone: "+1(678)-799-5296",
       location: "5307 Elena Way Woodstock, Georgia 30188.",
       pastor: "Apostle Charles Alade",
       service1: "",
