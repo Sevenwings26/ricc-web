@@ -1,5 +1,5 @@
 import React from "react";
-import preacher from "../Assets/Images/preacher.png";
+// import preacher from "../Assets/Images/preacher.png";
 
 const sections = [
   {
