@@ -5,8 +5,7 @@ import Banner4 from "../Assets/Images/banner4.jpg";
 import Banner5 from "../Assets/Images/banner5.jpg";
 import Banner7 from "../Assets/Images/banner7.jpg";
 
-
-export default [
+const CarouselImages = [
   {
     title: "Congregrant",
     content: "L",
@@ -38,3 +37,5 @@ export default [
     backgroundImage: Banner1,
   },
 ];
+
+export default CarouselImages;
